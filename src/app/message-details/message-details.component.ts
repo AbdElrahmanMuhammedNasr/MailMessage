@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import * as jquery from 'jquery'
 
 @Component({
   selector: 'app-message-details',
@@ -22,6 +23,7 @@ export class MessageDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
     this.route.queryParams.subscribe(params => {
       this.route.snapshot.queryParams['messageId'] ? this.display = true : this.display = false;
 
@@ -35,6 +37,12 @@ export class MessageDetailsComponent implements OnInit {
       image: '../../assets/2.jpg',
       mesBody:`
         this  <strong> code </strong> is not good enough 
+        <p>
+        fix it   we are so happy to invite you to our party to night
+        fix it   we are so happy to invite you to our party to night
+        fix it   we are so happy to invite you to our party to night
+        fix it   we are so happy to invite you to our party to night
+        </p>
         <ol> 
          <li> bad Speed </li>
          <li> bad for clean code </li>
@@ -42,12 +50,7 @@ export class MessageDetailsComponent implements OnInit {
          <li> please re-write your code  </li>
         <ol>
         <br>
-        <p>
-        fix it   we are so happy to invite you to our party to night
-        fix it   we are so happy to invite you to our party to night
-        fix it   we are so happy to invite you to our party to night
-        fix it   we are so happy to invite you to our party to night
-        </p>
+       
        
       `
     }

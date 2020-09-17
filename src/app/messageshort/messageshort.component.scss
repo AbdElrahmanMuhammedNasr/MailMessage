@@ -1,18 +1,27 @@
 .short-message{
     .Action{
-        padding-top: 20px;
+        padding-top: 1px;
     }
     .message-short{
         padding:20px 30px;
         border: 1px solid #c7c7c7;
+        background-color: #f7f7f7;
         border-radius: 5px;
-        margin: 10px 0px;
+        margin-bottom: 10px;
+        opacity: 0;
+        transform: translateY(-100px);
+        transition: all 0.5s ease-in-out;
         &:hover{
             background-color: #79c780;
             color: white;
             cursor: pointer;
         }
     }
+}
+.showing{
+    // background-color: red !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 ::-webkit-scrollbar{
     display: none;

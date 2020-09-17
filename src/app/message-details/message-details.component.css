@@ -21,10 +21,6 @@
 
 .message .send-part {
   padding: 20px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }
 
 .message .send-part textarea {

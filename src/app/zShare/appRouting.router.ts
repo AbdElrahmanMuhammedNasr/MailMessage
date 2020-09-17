@@ -6,6 +6,7 @@ import { SendMessageComponent } from '../send-message/send-message.component';
 
 
 const routes: Routes =[
+    {path:'', component:MessageDetailsComponent},
     {path:'send', component: SendMessageComponent},
     {path:'inbox', component: MessageDetailsComponent},
     {path:'contacts', component: ContactsComponent},

@@ -10,12 +10,26 @@
   padding: 20px;
   text-align: center;
   margin: 20px;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.5s ease-in-out;
 }
 
 .contact .single-contact img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.contact .single-contact:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 15px #0ba249;
+  transform: scale(1.1) !important;
+}
+
+.showing {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
 }
 
 ::-webkit-scrollbar {

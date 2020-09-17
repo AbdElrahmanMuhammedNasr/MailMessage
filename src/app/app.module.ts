@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {ChartsModule} from 'ng2-charts';
+// import {ChartsModule} from 'ng2-charts';
 
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { AppRouting } from './zShare/appRouting.router';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FormsModule } from '@angular/forms';
+import { ReplayComponent } from './replay/replay.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +25,11 @@ import { FormsModule } from '@angular/forms';
     SendMessageComponent,
     HeaderComponent,
     ContactsComponent,
+    ReplayComponent,
   ],
   imports: [
     BrowserModule,
-    ChartsModule,
+    // ChartsModule,
     AppRouting,
     FormsModule
   ],

@@ -1,0 +1,28 @@
+
+<div [ngSwitch]="reply.user" *ngFor="let reply of replys">
+
+
+    <div class="repaly-content row" *ngSwitchCase=true>
+        <section class="col-sm-1 reply-icon">
+            <span class="fa fa-reply"></span>
+        </section>
+
+        <section class="col-sm-11">
+            <strong> You </strong>
+            <p> {{reply.reply}} </p>
+            <small>12:30 am : 20 march 2020</small> 
+        </section>
+
+    </div>
+
+    <div class="repaly-content " *ngSwitchCase=false>
+        <p> {{reply.reply}} </p>
+        
+        <small>12:30 am : 20 march 2020</small> 
+    </div>
+
+    <hr>
+
+
+</div>
+

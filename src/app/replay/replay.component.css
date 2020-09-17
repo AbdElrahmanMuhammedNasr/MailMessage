@@ -1,0 +1,9 @@
+.repaly-content {
+  width: 90%;
+  margin: auto;
+}
+
+.repaly-content .reply-icon span {
+  color: #2fa52f;
+  font-size: 30px;
+}
