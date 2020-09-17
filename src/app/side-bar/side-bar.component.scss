@@ -1,0 +1,48 @@
+.side-bar{
+    text-align: center;
+
+    h6{
+        margin: 0px !important;
+        background-color: #3e9e47;
+        color: white;
+        padding: 30px;
+        width: 100%;
+        font-family: 'Teko';
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    ul {
+        li{
+            cursor: pointer;
+            padding: 20px;
+            margin-top: 10px;
+            &:hover{
+                background-color: #7bca83;
+                transition: 0.3s;
+                color: white;
+    
+            }
+
+        }
+     
+    }
+
+    .sent{
+        border-top-right-radius: 30px;
+        background-color: #3e9e47;
+        padding: 25px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        span{
+            color: white;
+            font-size: 30px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        :hover{
+            transform: rotate(360deg)
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+.img-name {
+  margin-bottom: 20px;
+}
+
+.img-name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.img-name p {
+  margin-left: 20px;
+  margin-top: auto;
+  line-height: 20px;
+  font-weight: bold;
+}

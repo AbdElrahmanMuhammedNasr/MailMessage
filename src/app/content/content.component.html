@@ -1,0 +1,32 @@
+<div class="row  main-content">
+    <app-side-bar 
+    class="col-sm-2 d-none d-sm-block" 
+    style="
+    background-color: white; 
+    height: 100%;
+     padding-left: 0px;
+    padding-right: 0px;"></app-side-bar>
+    
+    <app-messageshort class="col-sm-3" 
+    style="background-color: white;
+     height: 100%; 
+      overflow-y: scroll; 
+      overflow-x: hidden; 
+      padding-left: 0px; 
+      padding-right: 0px;"></app-messageshort>
+    
+
+    <div  class="col-sm-7"
+      style="
+      background-color: white;
+      overflow-y: scroll; 
+      overflow-x: hidden;
+      height: 100%;" 
+      >
+
+      <router-outlet></router-outlet>
+    </div>
+    
+      
+</div>
+

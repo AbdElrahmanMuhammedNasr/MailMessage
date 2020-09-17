@@ -1,0 +1,29 @@
+<div  class="send-message">
+    <app-header></app-header>
+
+    <form (ngSubmit)="sendMessage()" #sendData='ngForm'>
+    <section class="form-inputs">
+        <div class="row">
+            <label> <strong> To </strong></label>
+            <input class="form-control col-sm-12" placeholder="example@mail.com" [value]='email' email ngModel name="toWhere">
+        </div>
+
+
+        <div class="row">
+            <label> <strong> Subject </strong></label>
+            <input class="form-control col-sm-12"  ngModel name="subject">
+        </div>
+
+        <div class="row">
+            <label><strong> Body </strong></label>
+            <textarea class="form-control" ngModel name="mesBody" > </textarea>
+        </div>
+
+        <button class="btn btn-success btn-block">Send</button>
+
+    </section>
+
+</form>
+  
+
+</div>

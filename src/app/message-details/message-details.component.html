@@ -1,0 +1,55 @@
+<div class="message" [ngSwitch]="display">
+
+    <app-header></app-header>
+    <section *ngSwitchCase=true>
+
+        <div class="row justify-content-between">
+            <h3><strong> Subject :</strong> {{messageDetails.subject}}</h3>
+            <span class="fa fa-trash" style="font-size: 25px; color: gray; cursor: pointer;"></span>
+        </div>
+
+        <hr>
+
+        <div class="row justify-content-between" style="padding: 20px;">
+
+            <section>
+                <h5><strong> Sender : </strong> {{messageDetails.sender}}</h5>
+                <h5><strong> Time :</strong> {{messageDetails.time}}</h5>
+                <h5><strong> Address : </strong>{{messageDetails.address}}</h5>
+            </section>
+
+            <section>
+                <img style="width: 100px; height: 100px; border-radius: 50%;" [src]='messageDetails.image'>
+            </section>
+        </div>
+
+
+        <hr>
+
+        <!-- <p>
+        {{messageDetails.mesBody}}
+          </p> -->
+
+        <div [innerHTML]="messageDetails.mesBody"></div>
+
+
+
+        <hr>
+
+        <section class="send-part ">
+            <textarea class="form-control" id="testo"></textarea>
+            <button class="btn btn-success btn-block">Send</button>
+        </section>
+
+    </section>
+
+
+
+    <section *ngSwitchCase=false style="margin: auto; width: 50%; margin-top: auto; text-align: center;">
+        <span style="font-size: 25rem;" class="text-muted fa fa-envelope"></span>
+        <br>
+        <span class="text-muted" style="font-size: 5rem;">Inbox</span>
+    </section>
+
+
+</div>

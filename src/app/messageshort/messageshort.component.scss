@@ -1,0 +1,19 @@
+.short-message{
+    .Action{
+        padding-top: 20px;
+    }
+    .message-short{
+        padding:20px 30px;
+        border: 1px solid #c7c7c7;
+        border-radius: 5px;
+        margin: 10px 0px;
+        &:hover{
+            background-color: #79c780;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}
